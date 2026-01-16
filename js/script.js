@@ -253,28 +253,3 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Created by: Tanmay Gangadhar Giramkar');
     console.log('Prodigy InfoTech - Task 01');
 });
-```
-
-// ### **5. .gitignore**
-// ```
-// # OS generated files
-// .DS_Store
-// .DS_Store?
-// ._*
-// .Spotlight-V100
-// .Trashes
-// ehthumbs.db
-// Thumbs.db
-
-// # IDE files
-// .vscode/
-// .idea/
-// *.swp
-// *.swo
-// *~
-
-// # Logs
-// *.log
-
-// # Temporary files
-// *.tmp
