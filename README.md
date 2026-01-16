@@ -74,9 +74,8 @@ PRODIGY_SD_01/
 Screenshots:
 
 ![Temperature Converter Interface](assets/screenshot.png)
-<img width="1835" height="910" alt="Screenshot 2026-01-16 105549" src="https://github.com/user-attachments/assets/8b78cc4f-37bb-4ced-996e-17f4433a1d7b" />
 <img width="1840" height="913" alt="Screenshot 2026-01-16 105516" src="https://github.com/user-attachments/assets/9d05a506-0faa-4b47-a898-d09c83ce78f0" />
-
+<img width="1835" height="910" alt="Screenshot 2026-01-16 105549" src="https://github.com/user-attachments/assets/8b78cc4f-37bb-4ced-996e-17f4433a1d7b" />
 
 Learning Outcomes:
 
