@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temperature Conversion Program - Convert between Celsius, Fahrenheit, and Kelvin">
+    <meta name="author" content="Tanmay Gangadhar Giramkar">
+    <meta name="keywords" content="temperature converter, celsius, fahrenheit, kelvin, prodigy infotech">
+    
+    <title>Temperature Converter | Prodigy InfoTech - Task 01</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌡️</text></svg>">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="icon-wrapper">
+                <svg class="thermometer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
+                </svg>
+            </div>
+            <h1 class="title">Temperature Converter</h1>
+            <p class="subtitle">Convert between Celsius, Fahrenheit & Kelvin</p>
+        </header>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <!-- Temperature Input -->
+            <div class="form-group">
+                <label for="temperature" class="form-label">Enter Temperature Value</label>
+                <input 
+                    type="number" 
+                    id="temperature" 
+                    class="form-input" 
+                    placeholder="Enter temperature value"
+                    step="any"
+                    autofocus
+                >
+                <span class="error-message" id="error-message"></span>
+            </div>
+
+            <!-- Unit Selection -->
+            <div class="form-group">
+                <label for="unit" class="form-label">Select Original Unit</label>
+                <select id="unit" class="form-select">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <button id="convertBtn" class="btn btn-primary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                    </svg>
+                    Convert
+                </button>
+                <button id="resetBtn" class="btn btn-secondary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="1 4 1 10 7 10"></polyline>
+                        <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                    </svg>
+                    Reset
+                </button>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results" class="results-section hidden">
+            <h2 class="results-title">Converted Values</h2>
+            <div class="results-grid">
+                <!-- Celsius Result -->
+                <div class="result-card celsius-card">
+                    <div class="result-icon">°C</div>
+                    <div class="result-content">
+                        <span class="result-label">Celsius</span>
+                        <span id="celsiusResult" class="result-value">--</span>
+                    </div>
+                </div>
+
+                <!-- Fahrenheit Result -->
+                <div class="result-card fahrenheit-card">
+                    <div class="result-icon">°F</div>
+                    <div class="result-content">
+                        <span class="result-label">Fahrenheit</span>
+                        <span id="fahrenheitResult" class="result-value">--</span>
+                    </div>
+                </div>
+
+                <!-- Kelvin Result -->
+                <div class="result-card kelvin-card">
+                    <div class="result-icon">K</div>
+                    <div class="result-content">
+                        <span class="result-label">Kelvin</span>
+                        <span id="kelvinResult" class="result-value">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">Created by <strong>Tanmay Gangadhar Giramkar</strong></p>
+            <p class="footer-text">Prodigy InfoTech - Software Development Intern</p>
+            <p class="footer-text">Task 01 | January 2026</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
